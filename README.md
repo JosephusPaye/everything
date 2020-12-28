@@ -18,7 +18,7 @@ npm install @josephuspaye/everything --save
 
 ## Usage
 
-## Run a basic search
+### Run a basic search
 
 ```js
 const { search } = require('@josephuspaye/everything');
@@ -52,7 +52,7 @@ console.log(JSON.stringify(response, null, '  '));
 
 </details>
 
-## Include additional metadata with results
+### Include additional metadata with results
 
 ```js
 const { search } = require('@josephuspaye/everything');
@@ -93,7 +93,7 @@ console.log(JSON.stringify(response, null, '  '));
 
 </details>
 
-## Use regular expression in query, sort, and limit results
+### Use regular expression in query, sort, and limit results
 
 ```js
 const { search } = require('@josephuspaye/everything');
