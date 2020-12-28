@@ -1,0 +1,46 @@
+{
+  "name": "@josephuspaye/everything",
+  "description": "A native Node.js module for fast programmatic access to Everything search on Windows",
+  "version": "0.0.0",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JosephusPaye/everything.git"
+  },
+  "files": [
+    "everything",
+    "dist",
+    "src",
+    "binding.gyp"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.16",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "build": "tsc && node-gyp configure build",
+    "format": "prettier --write \"src/**/*.ts\" \"*.{js,json,md}\"",
+    "test": "echo no automated tests"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true
+  }
+}
